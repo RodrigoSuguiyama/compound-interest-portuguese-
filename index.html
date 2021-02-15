@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+  <title>Bola de neve</title>
+</head>
+
+<body>
+  <header>
+    <h1>Calcula Juros Compostos</h1>
+  </header>
+  <main>
+    <table class="table">
+      <thead class="table-head">
+        <tr class="line">
+          <th class="info-ano">ano</th> 
+          <th class="info-anualYield">rendimento no ano</th>
+          <th class="info-total">total</th>
+        </tr>
+      </thead>
+      <tbody class="tbody">
+          <!-- here input js html -->
+      </tbody>
+      
+    </table>
+    <form class="container-input">
+      <div class="container-ano">
+         <label class="label-input">período (ano)</label>
+         <input class="input-camp" id="input-ano" type="number" placeholder="Ex: 10 (anos)">
+      </div>
+      <div class="container-montante-inicial">
+        <label class="label-input">montante inicial</label>
+        <input class="input-camp" id="input-montante-inicial" type="number" placeholder="Ex: 5 (mil)">
+      </div>
+      <div class="container-aporte-anual">
+        <label class="label-input">aporte anual</label>
+        <input class="input-camp" id="input-aporte-anual" type="number" placeholder="Ex: 20 (mil)">
+      </div>
+      <div class="container-rendimento-anual">
+        <label class="label-input">rendimento anual (%)</label>
+        <input class="input-camp" id="input-rendimento-anual" type="number" placeholder="Ex: 10 (%)">
+      </div>
+    </form>
+    <div class="container-button">
+      <button id="button" type="button">Calcular</button>
+    </div>
+    
+  </main>
+  <script src="./calculo-bola-de-neve.js"></script>
+</body>
+
+</html>
